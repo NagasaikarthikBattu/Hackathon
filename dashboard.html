@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWear - Dashboard</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♻️</text></svg>">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F9F9F9] text-[#212121] font-poppins">
+
+    <div id="app" class="flex flex-col min-h-screen">
+        
+        <!-- Header -->
+        <header id="main-header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm"></header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-6 py-12">
+            
+            <!-- Profile Summary -->
+            <section id="profile-summary" class="bg-white p-8 rounded-xl shadow-lg mb-12 flex items-center gap-8">
+                <!-- Profile data will be injected here -->
+                <div class="text-center py-10 w-full">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+                    <p class="mt-4 text-gray-600">Loading Profile...</p>
+                </div>
+            </section>
+
+            <!-- My Listings -->
+            <section id="my-listings" class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold">My Listings</h2>
+                    <a href="add_item.html" class="bg-[#4CAF50] text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300 flex items-center gap-2">
+                        <i data-lucide="plus" class="w-5 h-5"></i>
+                        List an Item
+                    </a>
+                </div>
+                <div id="my-listings-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- User's listed items will be injected here -->
+                </div>
+            </section>
+
+            <!-- My Purchases/Swaps -->
+            <section id="my-swaps">
+                <h2 class="text-3xl font-bold mb-6">My Swap History</h2>
+                <div id="my-swaps-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- User's swap history will be injected here -->
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- Footer -->
+        <footer id="main-footer" class="bg-gray-800 text-white mt-auto"></footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

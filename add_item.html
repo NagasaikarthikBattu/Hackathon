@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWear - List an Item</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♻️</text></svg>">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F9F9F9] text-[#212121] font-poppins">
+
+    <div id="app" class="flex flex-col min-h-screen">
+        
+        <!-- Header -->
+        <header id="main-header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm"></header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-6 py-12">
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <h1 class="text-3xl font-bold mb-8 text-center">List a New Item</h1>
+                <form id="add-item-form" action="#" method="POST" class="grid md:grid-cols-2 gap-10">
+                    
+                    <!-- Left Column - Media -->
+                    <div class="space-y-6">
+                        <h2 class="text-xl font-semibold text-gray-800 border-b pb-2">Upload Images</h2>
+                        <div>
+                            <label for="image-upload" class="block text-sm font-medium text-gray-700 mb-2">Add Photos</label>
+                            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                                <div class="space-y-1 text-center">
+                                    <i data-lucide="image" class="mx-auto h-12 w-12 text-gray-400"></i>
+                                    <div class="flex text-sm text-gray-600">
+                                        <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-[#4CAF50] hover:text-green-700 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-green-500">
+                                            <span>Upload a file</span>
+                                            <input id="file-upload" name="file-upload" type="file" class="sr-only" multiple>
+                                        </label>
+                                        <p class="pl-1">or drag and drop</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="image-preview" class="grid grid-cols-3 gap-4">
+                            <!-- Image previews will appear here -->
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Details -->
+                    <div class="space-y-6">
+                        <h2 class="text-xl font-semibold text-gray-800 border-b pb-2">Item Details</h2>
+                        <div>
+                            <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+                            <input type="text" name="title" id="title" required class="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring-[#4CAF50] focus:border-[#4CAF50]">
+                        </div>
+                         <div>
+                            <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+                            <textarea id="description" name="description" rows="4" required class="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring-[#4CAF50] focus:border-[#4CAF50]"></textarea>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                             <div>
+                                <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
+                                <select id="category" name="category" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#4CAF50] focus:border-[#4CAF50] sm:text-sm">
+                                    <option>Tops</option>
+                                    <option>Bottoms</option>
+                                    <option>Dresses</option>
+                                    <option>Outerwear</option>
+                                    <option>Shoes</option>
+                                    <option>Accessories</option>
+                                </select>
+                            </div>
+                             <div>
+                                <label for="type" class="block text-sm font-medium text-gray-700">Type</label>
+                                <select id="type" name="type" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#4CAF50] focus:border-[#4CAF50] sm:text-sm">
+                                    <option>Shirt</option>
+                                    <option>T-Shirt</option>
+                                    <option>Trousers</option>
+                                    <option>Jeans</option>
+                                    <option>Sneakers</option>
+                                    <option>Boots</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="size" class="block text-sm font-medium text-gray-700">Size</label>
+                                <select id="size" name="size" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#4CAF50] focus:border-[#4CAF50] sm:text-sm">
+                                    <option>XS</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="condition" class="block text-sm font-medium text-gray-700">Condition</label>
+                                 <select id="condition" name="condition" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#4CAF50] focus:border-[#4CAF50] sm:text-sm">
+                                    <option>New with tags</option>
+                                    <option>Excellent</option>
+                                    <option>Good</option>
+                                    <option>Fair</option>
+                                </select>
+                            </div>
+                        </div>
+                         <div>
+                            <label for="tags" class="block text-sm font-medium text-gray-700">Tags (comma separated)</label>
+                            <input type="text" name="tags" id="tags" class="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring-[#4CAF50] focus:border-[#4CAF50]" placeholder="e.g. vintage, denim, summer">
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="md:col-span-2 flex justify-end gap-4 pt-6 border-t">
+                        <button type="button" class="bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300 transition duration-300">Save Draft</button>
+                        <button type="submit" class="bg-[#4CAF50] text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300">Submit for Review</button>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="main-footer" class="bg-gray-800 text-white mt-auto"></footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="js/add_item_page.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWear - Sustainable Fashion Exchange</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♻️</text></svg>">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F9F9F9] text-[#212121] font-poppins">
+
+    <div id="app" class="flex flex-col min-h-screen">
+        
+        <!-- Header -->
+        <header id="main-header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm"></header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+
+            <!-- Hero Section -->
+            <section class="relative bg-white">
+                <div class="absolute inset-0">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1551803091-e37391a135b5?q=80&w=2940&auto=format&fit=crop" alt="Sustainable fashion background">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                </div>
+                <div class="relative container mx-auto px-6 py-32 lg:py-48 text-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Give Your Wardrobe a Second Life</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Join the community dedicated to sustainable style. Swap, save, and redefine fashion.</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="register.html" class="bg-[#4CAF50] text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300 transform hover:scale-105">Start Swapping</a>
+                        <a href="browse.html" class="bg-white/30 backdrop-blur-sm text-white font-bold py-3 px-8 rounded-lg hover:bg-white/50 transition duration-300 transform hover:scale-105">Browse Items</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categories Section -->
+            <section class="py-16 md:py-24 bg-[#F9F9F9]">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center mb-4">Explore Categories</h2>
+                    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Find exactly what you're looking for, from everyday essentials to unique statement pieces.</p>
+                    <div id="categories-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                        <!-- Categories will be injected here by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Items Section -->
+            <section class="py-16 md:py-24 bg-white">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center mb-12">Featured Items</h2>
+                    <div id="featured-items-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Featured items will be injected here by JS -->
+                    </div>
+                    <div class="text-center mt-12">
+                        <a href="browse.html" class="bg-[#4CAF50] text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300">View All Items</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="py-16 md:py-24 bg-[#F9F9F9]">
+                 <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center mb-12">How ReWear Works</h2>
+                    <div class="grid md:grid-cols-3 gap-10 text-center">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-100 p-6 rounded-full mb-4">
+                                <i data-lucide="upload-cloud" class="w-10 h-10 text-[#4CAF50]"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">1. List Your Items</h3>
+                            <p class="text-gray-600">Snap a photo of clothes you no longer wear and upload them to the platform in minutes.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-100 p-6 rounded-full mb-4">
+                                <i data-lucide="repeat" class="w-10 h-10 text-[#4CAF50]"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">2. Swap or Use Points</h3>
+                            <p class="text-gray-600">Exchange items directly with other members or use points earned from your listings to get new pieces.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                             <div class="bg-green-100 p-6 rounded-full mb-4">
+                                <i data-lucide="heart-handshake" class="w-10 h-10 text-[#4CAF50]"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">3. Refresh Your Style</h3>
+                            <p class="text-gray-600">Receive your new-to-you items and enjoy a refreshed wardrobe, sustainably.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="main-footer" class="bg-gray-800 text-white"></footer>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/landing_page.js"></script>
+</body>
+</html>

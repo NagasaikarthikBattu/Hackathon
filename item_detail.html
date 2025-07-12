@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details - ReWear</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F9F9F9] text-[#212121] font-poppins">
+
+    <div id="app" class="flex flex-col min-h-screen">
+        
+        <!-- Header -->
+        <header id="main-header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm"></header>
+
+        <!-- Main Content -->
+        <main id="item-detail-container" class="flex-grow container mx-auto px-6 py-12">
+            <!-- Item details will be injected here by JS -->
+            <div class="text-center py-20">
+                <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-gray-900 mx-auto"></div>
+                <p class="mt-4 text-lg text-gray-600">Loading Item...</p>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="main-footer" class="bg-gray-800 text-white"></footer>
+
+    </div>
+
+    <!-- Swap Request Modal -->
+    <div id="swap-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex justify-center items-center z-[60] p-4">
+        <div class="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md m-4 relative animate-scale-in">
+            <button id="close-swap-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h2 class="text-2xl font-bold mb-4">Request Swap</h2>
+            <p id="swap-modal-text" class="mb-6 text-gray-700">You are requesting a swap for [Item Name]. Please select an item you wish to offer in exchange.</p>
+            <div class="mb-6">
+                <label for="user-items-dropdown" class="block text-sm font-medium text-gray-700 mb-2">Your Items:</label>
+                <select id="user-items-dropdown" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                    <!-- User items will be populated here -->
+                </select>
+            </div>
+            <button id="confirm-swap-btn" class="w-full bg-[#4CAF50] text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">Confirm Swap Request</button>
+        </div>
+    </div>
+
+    <!-- Redeem Points Modal -->
+    <div id="redeem-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex justify-center items-center z-[60] p-4">
+        <div class="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md m-4 relative animate-scale-in">
+            <button id="close-redeem-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h2 class="text-2xl font-bold mb-4">Redeem with Points</h2>
+            <p id="redeem-modal-text" class="mb-6 text-gray-700">You are about to redeem [Points] points for [Item Name].</p>
+            <button id="confirm-redeem-btn" class="w-full bg-[#4CAF50] text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">Confirm Redemption</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/item_detail.js"></script>
+</body>
+</html>
