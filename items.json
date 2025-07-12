@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Levi's Denim Jacket",
+    "description": "Classic trucker style denim jacket from the 90s. Perfectly worn in for a comfortable fit. A timeless piece for any wardrobe.",
+    "category": "Outerwear",
+    "size": "M",
+    "condition": "Good",
+    "points": 500,
+    "userId": 1,
+    "images": [
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1608234809737-acba71b30a16?q=80&w=2787&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Floral Summer Maxi Dress",
+    "description": "Light and airy maxi dress with a vibrant floral pattern. Ideal for summer events or a casual day out. Features an adjustable waist tie.",
+    "category": "Dresses",
+    "size": "S",
+    "condition": "Excellent",
+    "points": 450,
+    "userId": 3,
+    "images": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1594633312632-31c3d8a57a94?q=80&w=2787&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cozy Knit Crewneck Sweater",
+    "description": "A soft, chunky knit sweater in a neutral beige color. Perfect for layering in colder months. Made from a wool-blend fabric.",
+    "category": "Tops",
+    "size": "L",
+    "condition": "Excellent",
+    "points": 350,
+    "userId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1616853606364-2dce02f43d84?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=2872&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "High-Waisted Black Trousers",
+    "description": "Elegant and professional high-waisted trousers. Versatile for office wear or a chic evening look. Features a straight-leg cut.",
+    "category": "Bottoms",
+    "size": "M",
+    "condition": "New with tags",
+    "points": 400,
+    "userId": 1,
+    "images": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1541089404513-503a4d009693?q=80&w=2835&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Classic White Leather Sneakers",
+    "description": "Minimalist white leather sneakers that go with everything. Slightly used but in great shape with lots of life left.",
+    "category": "Shoes",
+    "size": "8",
+    "condition": "Good",
+    "points": 300,
+    "userId": 3,
+    "images": [
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?q=80&w=2835&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Striped Cotton T-Shirt",
+    "description": "A classic Breton striped t-shirt. Made from 100% organic cotton. Soft, comfortable, and a wardrobe staple.",
+    "category": "Tops",
+    "size": "M",
+    "condition": "Excellent",
+    "points": 150,
+    "userId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=2787&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Leather Crossbody Bag",
+    "description": "A stylish and functional crossbody bag made from genuine leather. Compact yet spacious enough for essentials.",
+    "category": "Accessories",
+    "size": "One Size",
+    "condition": "Fair",
+    "points": 250,
+    "userId": 1,
+    "images": [
+      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=2891&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1605733513596-59c853b893a3?q=80&w=2787&auto=format&fit=crop"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Khaki Chino Shorts",
+    "description": "Comfortable and versatile chino shorts. Perfect for warm weather. In a classic khaki color.",
+    "category": "Bottoms",
+    "size": "32",
+    "condition": "Excellent",
+    "points": 200,
+    "userId": 3,
+    "images": [
+      "https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=2787&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1603217039643-3b56a15a7209?q=80&w=2787&auto=format&fit=crop"
+    ]
+  }
+]

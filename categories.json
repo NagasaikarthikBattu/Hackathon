@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Tops",
+    "icon": "<i data-lucide='shirt' class='w-10 h-10'></i>"
+  },
+  {
+    "name": "Bottoms",
+    "icon": "<i data-lucide='stretch-horizontal' class='w-10 h-10'></i>"
+  },
+  {
+    "name": "Dresses",
+    "icon": "<i data-lucide='person-standing' class='w-10 h-10'></i>"
+  },
+  {
+    "name": "Outerwear",
+    "icon": "<i data-lucide='wind' class='w-10 h-10'></i>"
+  },
+  {
+    "name": "Shoes",
+    "icon": "<i data-lucide='footprints' class='w-10 h-10'></i>"
+  },
+  {
+    "name": "Accessories",
+    "icon": "<i data-lucide='gem' class='w-10 h-10'></i>"
+  }
+]

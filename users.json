@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "username": "johndoe",
+    "email": "john.doe@example.com",
+    "joinedDate": "2025-01-15",
+    "points": 1250,
+    "avatar": "https://i.pravatar.cc/150?u=1",
+    "swapHistory": [2, 5]
+  },
+  {
+    "id": 2,
+    "username": "sarah.k",
+    "email": "sarah.k@example.com",
+    "joinedDate": "2025-02-20",
+    "points": 800,
+    "avatar": "https://i.pravatar.cc/150?u=2",
+    "swapHistory": [4]
+  },
+  {
+    "id": 3,
+    "username": "mike_style",
+    "email": "mike@example.com",
+    "joinedDate": "2025-03-10",
+    "points": 2100,
+    "avatar": "https://i.pravatar.cc/150?u=3",
+    "swapHistory": [6, 7]
+  },
+  {
+    "id": 0,
+    "username": "admin",
+    "email": "admin@rewear.com",
+    "joinedDate": "2025-01-01",
+    "points": 9999,
+    "avatar": "https://i.pravatar.cc/150?u=admin",
+    "swapHistory": []
+  }
+]

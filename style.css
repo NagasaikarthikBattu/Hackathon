@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('variables.css');
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+}
+
+.item-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.category-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color);
+}
+
+.admin-tab-link.active-tab {
+    background-color: #374151; /* bg-gray-700 */
+    color: #ffffff; /* text-white */
+}
+
+/* Toast Notification Styles */
+.toast-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    z-index: 1000;
+    font-weight: 500;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInAndOut 4s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.toast-notification.success { background-color: var(--primary-color); }
+.toast-notification.error { background-color: var(--red); }
+.toast-notification.info { background-color: var(--blue); }
+
+@keyframes slideInAndOut {
+    10% { transform: translateX(0); opacity: 1; }
+    90% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes scale-in {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.animate-scale-in {
+    animation: scale-in 0.2s ease-out forwards;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
